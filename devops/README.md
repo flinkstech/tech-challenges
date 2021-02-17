@@ -22,12 +22,10 @@ Requirements:
 2. Run a basic website based on a Nginx container
    * URL needs to be: ​**challenge.domain.local**
    * Web service must return ​**Hello Flinks**​ on “/” in a namespace named ​**flinks**
-4. Nginx Ingress Controller must be must be installed in namespace ​**ingress-controller** (without using microk8s' ingress service)
-5. Website must be highly available (HA) and load balanced using Nginx Ingress Controller
-6. Bash script to restore all your configurations into a brand new cluster
-
-Bonus:
-7. A second web application pointing to URL ​**challenge-api.domain.local**​ 
+3. Nginx Ingress Controller must be must be installed in namespace ​**ingress-controller** (without using microk8s' ingress service)
+4. Website must be highly available (HA) and load balanced using Nginx Ingress Controller
+5. Bash script to restore all your configurations into a brand new cluster
+6. **Bonus** A second web application pointing to URL ​**challenge-api.domain.local**​ 
    * Use Golang to build a basic CRUD functions API (in-memory, no persistence required)
    * It needs to use the same Load Balancer IP via Nginx Ingress Controller
 
