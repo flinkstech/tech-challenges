@@ -26,7 +26,7 @@ Requirements:
 5. Website must be highly available (HA) and load balanced using Nginx Ingress Controller
 6. Bash script to restore all your configurations into a brand new cluster
 
-**Bonus:**
+Bonus:
 7. A second web application pointing to URL ​**challenge-api.domain.local**​ 
    * Use Golang to build a basic CRUD functions API (in-memory, no persistence required)
    * It needs to use the same Load Balancer IP via Nginx Ingress Controller
